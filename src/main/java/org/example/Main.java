@@ -1,16 +1,12 @@
 package org.example;
+
 class Main {
     public static void main(String[] args) {
-        boolean isGreenLight = false;
+        boolean isGreenLight = false;  // Красный свет
 
-        int speedOfPlayer1 = 5;
-        int speedOfPlayer2 = 0;
-        int speedOfPlayer3 = 2;
-
-        // Допишите здесь логику так, что будет подсчитано и выведено количество
-        // игроков, которые выбывают. (с 13 строки ответ)
-        // Если свет зелёный, то проходят все игроки (0 выбывают).
-        // Если свет красный, то выбывает каждый, чья скорость не 0.
+        int speedOfPlayer1 = 5;  // Все игроки имеют скорость > 0
+        int speedOfPlayer2 = 3;  // Изменили с 0 на 3
+        int speedOfPlayer3 = 7;  // Изменили с 2 на 7
 
         int countOfEliminatedPlayers = 0;
 
@@ -29,5 +25,6 @@ class Main {
         }
 
         System.out.println(countOfEliminatedPlayers);
+        System.out.println("Все проиграли!");
     }
 }
